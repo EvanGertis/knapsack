@@ -14,18 +14,18 @@ namespace KN {
 	class Knapsack_solver
 	{
 		//members.
-		int mNumOfItems;
-		int mCapcityOfKnapsack;
-		std::vector<std::vector<int>> mKnapsackTable;
-		int totalBenefit = 0;
-		std::vector<int> mWeights;
-		std::vector<int> mValues;
+		int m_nNumOfItems;
+		int m_nCapacityOfKnapsack;
+		std::vector<std::vector<int>> m_mapKnapsackTable;
+		int m_nTotalBenefit = 0;
+		std::vector<int> m_vWeights;
+		std::vector<int> m_vValues;
 
 	/**************************************/
 	/*************************************/
 	/*************************************/
 	public:
-		Knapsack_solver();
+		Knapsack_solver(int numOfItems, int capacityOfKnapsack, const std::vector<int> &weights, const std::vector<int> &values);
 		void operator()();
 		void showResult();
 
